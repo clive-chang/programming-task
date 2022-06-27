@@ -5,14 +5,9 @@ function getUniqueValues(arr) {
 function getHighestOccurences(arr, numbersOfResults) {
     if (!arr) return;
 
-    const urlObj = [];
-
-    arr.forEach((item) => {
-        if (typeof urlObj[item] === 'undefined') {
-            urlObj[item] = 0;
-        }
-        urlObj[item]++;
-    });
+    const urlObj = arr.reduce((prevValue, currentValue) => {
+        return {...prevValue, [currentValue]: (prevValue[currentValue] || 0) + 1 }
+    }, {});
 
     return Object.entries(urlObj)
         .sort((a, b) => b[1] - a[1])
