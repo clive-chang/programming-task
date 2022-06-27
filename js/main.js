@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
             const file = e.target.files[0];
             if(!file.name.match(/\.log$/)) {
                 fileUpload.value = '';
+                console.log('Please only upload .log files');
                 return;
             }
             
