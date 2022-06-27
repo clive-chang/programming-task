@@ -35,9 +35,9 @@ window.addEventListener('DOMContentLoaded', () => {
                 const topThreeIpAddresses = urls?.length && getHighestOccurences(ipAddresses, 3);
                 
                 console.table({
-                    "Number of Unique Addresses": uniqueIpAddress.length,
+                    "Number of unique addresses": uniqueIpAddress.length,
                     "Top 3 most visited URLs": topThreeUrls.map(url=>url[0]).join(', '),
-                    "Top 3 Most active IP Addresses": topThreeIpAddresses.map(ip=>ip[0]).join(', ')
+                    "Top 3 most active IP Addresses": topThreeIpAddresses.map(ip=>ip[0]).join(', ')
                 })
 
                 fileUpload.value = '';
