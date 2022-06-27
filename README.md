@@ -29,7 +29,7 @@ The goal here is to parse the log file and extract out the IP addresses as well 
 
 * run npm install after downloading the repository
 
-### Instructrion
+### Instruction
 * Open up index.html in browser
 * Open up the browser dev tool and then upload the log file using the file input
 * Result should be printed out in the console
